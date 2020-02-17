@@ -1,7 +1,7 @@
 #!/bin/bash
 while [1]
 do
-raspistill -o 1.jpg
+raspistill -dt -o image_%d.jpg
 git add -A
 git commit -m "photo"
 git push cloud master
